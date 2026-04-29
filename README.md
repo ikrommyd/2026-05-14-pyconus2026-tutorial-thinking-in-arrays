@@ -2,6 +2,28 @@
 
 This repository contains everything you need to follow the "[Thinking in Arrays: An Introduction to Array-Oriented Programming](https://us.pycon.org/2026/schedule/presentation/92/)" tutorial, presented at the [PyCon US 2026](https://us.pycon.org/2026/) conference on [Thursday, May 14, 2026 1:30 p.m.–5 p.m.](https://us.pycon.org/2026/schedule/presentation/92/) in Room 101A.
 
+## Internet connectivity
+
+The tutorial can be run either locally or on MyBinder (a free Jupyter cloud platform).
+
+**Before the tutorial:**
+- If you plan to run it locally, create the virtual environment beforehand using one of the setups below (`pixi`, `uv`, `venv`, `conda`, etc.). You can also do it during the tutorial if the venue's internet is good enough.
+- If you plan to use MyBinder, no prep is needed — you just need to be able to reach the MyBinder site.
+
+**During the tutorial:**
+- A local setup that was prepared beforehand needs no internet at all, *except* for Part 4, which streams a 611 MB Chicago taxi Parquet file from S3. To run Part 4 fully offline, download it once beforehand and place it at `part-4/chicago-taxi.parquet`:
+  ```shell
+  curl -L -o part-4/chicago-taxi.parquet https://pivarski-princeton.s3.amazonaws.com/chicago-taxi.parquet
+  ```
+  or with `wget`:
+  ```shell
+  wget -O part-4/chicago-taxi.parquet https://pivarski-princeton.s3.amazonaws.com/chicago-taxi.parquet
+  ```
+  then change the `"https://pivarski-princeton.s3.amazonaws.com/chicago-taxi.parquet"` strings in `part-4/project.ipynb` and `part-4/solutions.ipynb` to `"chicago-taxi.parquet"`.
+- The MyBinder approach only needs enough connectivity to keep the page loaded.
+
+**If the internet goes out at the venue:** the tutorial can only be completed by attendees with a working local setup. Projects are done in groups, so one local setup per group is enough. As a last resort, we'll live-code the solutions together.
+
 ## Recommended: run the notebooks on your computer with `pixi`
 
 First, clone this repository.
