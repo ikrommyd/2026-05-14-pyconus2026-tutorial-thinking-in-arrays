@@ -10,7 +10,8 @@ This repository contains everything you need to follow the "[Thinking in Arrays:
 ### Recommended path (local + pre-downloaded data)
 
 1. Clone this repository and create the virtual environment using one of the setups below (`pixi`, `uv`, `venv`, `conda`, etc.) — see the sections that follow.
-2. Pre-download the 611 MB Chicago taxi Parquet file used in Part 4 and place it at `part-4/chicago-taxi.parquet`:
+2. Pre-download the 611 MB Chicago taxi Parquet file used in Part 4 and place it at `part-4/chicago-taxi.parquet`.
+   with `curl`:
    ```shell
    curl -L -o part-4/chicago-taxi.parquet https://pivarski-princeton.s3.amazonaws.com/chicago-taxi.parquet
    ```
