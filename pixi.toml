@@ -2,7 +2,7 @@
 authors = ["Iason Krommydas <iason.krom@gmail.com>"]
 channels = ["conda-forge"]
 name = "2026-05-14-pyconus2026-tutorial-thinking-in-arrays"
-platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
+platforms = ["linux-64", "linux-aarch64", "osx-64", "osx-arm64", "win-64"]
 version = "0.1.0"
 
 [tasks.lab]
