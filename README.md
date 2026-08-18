@@ -2,6 +2,13 @@
 
 This repository contains everything you need to follow the "[Thinking in Arrays: An Introduction to Array-Oriented Programming](https://us.pycon.org/2026/schedule/presentation/92/)" tutorial, presented at the [PyCon US 2026](https://us.pycon.org/2026/) conference on [Thursday, May 14, 2026 1:30 p.m.–5 p.m.](https://us.pycon.org/2026/schedule/presentation/92/) in Room 101A.
 
+> [!NOTE]
+> The file `https://pivarski-princeton.s3.us-east-1.amazonaws.com/chicago-taxi.parquet`, needed for the last exercise, has been deleted. It is now [hosted on Zenodo](https://zenodo.org/records/14537442); download it with
+>
+> ```bash
+> wget 'https://zenodo.org/records/14537442/files/chicago-taxi.parquet?download=1' -O chicago-taxi.parquet
+> ```
+
 ## Internet connectivity
 
 > [!IMPORTANT]
