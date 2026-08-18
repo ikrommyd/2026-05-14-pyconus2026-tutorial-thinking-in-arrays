@@ -2,13 +2,6 @@
 
 This repository contains everything you need to follow the "[Thinking in Arrays: An Introduction to Array-Oriented Programming](https://us.pycon.org/2026/schedule/presentation/92/)" tutorial, presented at the [PyCon US 2026](https://us.pycon.org/2026/) conference on [Thursday, May 14, 2026 1:30 p.m.–5 p.m.](https://us.pycon.org/2026/schedule/presentation/92/) in Room 101A.
 
-> [!NOTE]
-> The file `https://pivarski-princeton.s3.us-east-1.amazonaws.com/chicago-taxi.parquet`, needed for the last exercise, has been deleted. It is now [hosted on Zenodo](https://zenodo.org/records/14537442); download it with
->
-> ```bash
-> wget 'https://zenodo.org/records/14537442/files/chicago-taxi.parquet?download=1' -O chicago-taxi.parquet
-> ```
-
 ## Internet connectivity
 
 > [!IMPORTANT]
@@ -21,19 +14,19 @@ This repository contains everything you need to follow the "[Thinking in Arrays:
 
    with `curl`:
    ```shell
-   curl -L -o part-4/chicago-taxi.parquet https://pivarski-princeton.s3.amazonaws.com/chicago-taxi.parquet
+   curl -L -o part-4/chicago-taxi.parquet https://zenodo.org/records/14537442/files/chicago-taxi.parquet
    ```
    or with `wget`:
    ```shell
-   wget -O part-4/chicago-taxi.parquet https://pivarski-princeton.s3.amazonaws.com/chicago-taxi.parquet
+   wget -O part-4/chicago-taxi.parquet https://zenodo.org/records/14537442/files/chicago-taxi.parquet
    ```
-   Then change the `"https://pivarski-princeton.s3.amazonaws.com/chicago-taxi.parquet"` strings in `part-4/project.ipynb` and `part-4/solutions.ipynb` to `"chicago-taxi.parquet"`.
+   Then change the `"https://zenodo.org/records/14537442/files/chicago-taxi.parquet"` strings in `part-4/project.ipynb` and `part-4/solutions.ipynb` to `"chicago-taxi.parquet"`.
 
 With those two steps done, you need **no internet at all** during the tutorial.
 
 ### Other options (less reliable)
 
-- **Local setup without pre-downloading the Parquet file** — works for Parts 1–3 and 5 offline, but Part 4 will stream the 611 MB file from S3 on the day, which depends on the venue's Wi-Fi.
+- **Local setup without pre-downloading the Parquet file** — works for Parts 1–3 and 5 offline, but Part 4 will stream the 611 MB file from Zenodo on the day, which depends on the venue's Wi-Fi.
 - **MyBinder** (no local setup) — runs everything in the browser, but needs steady connectivity throughout the tutorial just to keep the session alive.
 
 **If the internet goes out at the venue:** only attendees with a local setup will be able to run the notebooks. The projects are done in groups, so one local setup per group is enough. As a last resort, we'll live-code the solutions together.
